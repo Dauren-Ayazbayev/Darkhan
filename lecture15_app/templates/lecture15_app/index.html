@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load i18n %}
+WelcomeHeading
+<h1>{% trans 'WelcomeHeading' %}</h1>
+<p>{% trans 'WelcomeMessage' %}</p>
+{% get_current_language as LANGUAGE_CODE %}
+{{ LANGUAGE_CODE }}
+</body>
+</html>
